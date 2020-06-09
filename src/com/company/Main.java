@@ -13,6 +13,12 @@ public class Main {
         third_tree(4);
     }
 
+    public static String boolToWord(boolean b) {
+        String msg = b == true ? "Yes" : "No";
+//        System.out.println(msg);
+        return msg;
+    }
+
     public static void first_tree(int size) {
 
         for (int i = 1; i <= size; i++) {
