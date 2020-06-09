@@ -8,6 +8,9 @@ public class Main {
 
         System.out.println("second tree -------------------");
         second_tree(6);
+
+        System.out.println("third tree -------------------");
+        third_tree(4);
     }
 
     public static void first_tree(int size) {
@@ -29,6 +32,26 @@ public class Main {
                 System.out.print("*");
             }
             System.out.print("\n");
+        }
+    }
+
+    private static int calculateMaxWidth(int modules) {
+        return (2 * modules - 1);
+    }
+
+    private static void third_tree(int modules) {
+        int maxWidth = calculateMaxWidth(modules);
+
+        for (int l = 0; l < modules + 1; l++) {
+            for (int i = 1; i < l + 1; i++) {
+                for (int k = 0; k < maxWidth - i - 1; k++) {
+                    System.out.print(" ");
+                }
+                for (int j = 0; j < 2 * i - 1; j++) {
+                    System.out.print("*");
+                }
+                System.out.print("\n");
+            }
         }
     }
 }
