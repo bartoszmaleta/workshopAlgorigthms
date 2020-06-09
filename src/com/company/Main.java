@@ -61,3 +61,13 @@ public class Main {
         }
     }
 }
+
+
+////////////////////////////////////////////////////////////////
+
+//    docelowa złożoność obliczeniowa: O(n)
+//        docelowa złożoność pamięciowa: O(1)
+//
+//        tablica = [-4, 12, 12, 3, 3, 3, 3, 192, 20, 20, -5, 9, 0,0, 0, 0, 0, 0, 0, -27, 1, 100]
+//
+//        int max_same_segment(int[] tablica)
